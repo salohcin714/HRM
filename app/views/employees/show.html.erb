@@ -1,13 +1,18 @@
-
-<p>
-  <strong>Name:</strong>
-  <%= @employee.first_name %>&nbsp;<%= @employee.last_name %>
-</p>
-
-<p>
-  <strong>DOB:</strong>
-  <%= @employee.date_of_birth %>
-</p>
-
-<%= link_to 'Back', employees_path %> | 
-<%= link_to 'Edit', edit_employee_path(@employee) %>
+<div class="card">
+  <div class="card-content">
+    <p>
+      <strong>Name:</strong>
+      <%= @employee.first_name %>&nbsp;<%= @employee.last_name %>
+    </p>
+    <p>
+      <strong>DOB:</strong>
+      <%= @employee.date_of_birth %>
+    </p>
+  </div>
+</div>
+<a href="<%= employees_path %>">
+  <button class="btn">Back</button>
+</a>
+<a href="<%= edit_employee_path %>">
+  <button class="btn">Edit</button>
+</a>

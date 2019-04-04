@@ -1,7 +1,8 @@
-
 <h1>All Employees</h1>
 
-<%= link_to 'New Employee', new_employee_path %>
+<a href="<%= new_employee_path %>">
+  <button class="btn">New Employee</button>
+</a>
 <table>
   <tr>
     <th>First Name</th>
@@ -13,11 +14,18 @@
     <tr>
       <td><%= employee.first_name %></td>
       <td><%= employee.last_name %></td>
-      <td><%= link_to 'Show', employee_path(employee) %></td>
-      <td><%= link_to 'Edit', edit_employee_path(employee) %></td>
+      <td><a href="<%= employee_path(employee) %>">
+        <button class="btn" href="">Show</button>
+      </a></td>
+      <td>
+        <a href="<%= edit_employee_path(employee) %>">
+          <button class="btn">Edit</button>
+        </a>
+      </td>
       <td><%= link_to 'Destroy', employee_path(employee),
                       method: :delete,
-                      data: { confirm: 'Are you sure?' } %></td>
+                      data: {confirm: 'Are you sure?'} %>
+      </td>
     </tr>
   <% end %>
 </table>
