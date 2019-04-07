@@ -22,7 +22,7 @@
           <button class="btn">Edit</button>
         </a>
       </td>
-      <td><%= link_to 'Destroy', employee_path(employee),
+      <td><%= link_to '<button class="btn">Destroy</button>'.html_safe, employee_path(employee),
                       method: :delete,
                       data: {confirm: 'Are you sure?'} %>
       </td>
