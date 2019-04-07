@@ -10,5 +10,11 @@
         <property name="enable_load_extension" value="true" />
       </driver-properties>
     </data-source>
+    <data-source source="LOCAL" name="hrm_development@localhost" uuid="3b6f3a42-7c12-428d-b883-66c5eb4e4857">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5432/hrm_development</jdbc-url>
+    </data-source>
   </component>
 </project>
