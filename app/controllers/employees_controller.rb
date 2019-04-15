@@ -5,10 +5,11 @@ class EmployeesController < ApplicationController
 
   def create
     @employee = Employee.new(params.require(:employee).permit(:first_name, :last_name, :date_of_birth))
-
+    # If Employee passes validation, save it in database
     if @employee.save
       redirect_to @employee
     else
+      # Render New view with errors
       render 'new'
     end
   end
@@ -27,6 +28,7 @@ class EmployeesController < ApplicationController
 
   def update
     @employee = Employee.find(params[:id])
+
     if @employee.save
       redirect_to @employee
     else
