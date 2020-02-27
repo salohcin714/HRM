@@ -1,24 +1,11 @@
-# README
+# Employee Manager
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Simple CRUD application that was part of a project to create a larger system.
 
-Things you may want to cover:
+Ruby Version: `2.3.3`
 
-* Ruby version
+Rails Version: `5.1`
 
-* System dependencies
+Database: PostgreSQL
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Hosted at: http://webd435.herokuapp.com/
